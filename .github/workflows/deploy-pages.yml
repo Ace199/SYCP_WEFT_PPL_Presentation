@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      NEXT_PUBLIC_BASE_PATH: /WEFT_PPL_Presentation
+      NEXT_PUBLIC_BASE_PATH: /SYCP_WEFT_PPL_Presentation
 
     steps:
       - name: Checkout
