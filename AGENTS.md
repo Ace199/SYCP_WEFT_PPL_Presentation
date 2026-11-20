@@ -275,3 +275,13 @@ First milestone: **Master Canvas Interaction Prototype V0.1**, then homepage ass
 - Reader validation follows the new 30–60 second overview goal. Check whether a non-pipeline reader can explain the system, what it organizes, why it is real, and the three views. The old 90-second seven-section reader test is no longer an unchanged homepage requirement; retain its plain-language and jargon checks. Do not present an agent self-review as actual human reader testing.
 - Report missing production assets, human feedback, or runtime/performance tests as limitations. Do not expand scope to satisfy superseded completion checklists.
 - Final reports briefly state changes, validation results, and remaining risks. Context summaries retain goals, confirmed decisions, modified files, validation status, unfinished work, and rejected approaches.
+
+<!-- BEGIN:nextjs-agent-rules -->
+
+# This is NOT the Next.js you know
+
+This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
+
+This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
+
+<!-- END:nextjs-agent-rules -->

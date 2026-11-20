@@ -29,9 +29,22 @@
   gap: clamp(12px, 1.5vw, 24px);
   flex-shrink: 0;
 }
+.headerBrand {
+  display: flex;
+  align-items: center;
+  gap: clamp(12px, 1.5vw, 24px);
+  flex-shrink: 0;
+}
+.companyLogo {
+  display: block;
+  width: clamp(76px, 8vw, 120px);
+  height: auto;
+}
 .header { padding-inline: clamp(8px, 1.4vw, 24px); }
 .wordmark {
-  font: 700 clamp(30px, 3.2vw, 46px)/1 var(--display);
+  font: 500 clamp(30px, 3.2vw, 46px)/1 var(--display);
+  transform: scaleY(0.6);
+  transform-origin: center;
   letter-spacing: -0.04em;
   text-decoration: none;
   white-space: nowrap;
@@ -349,6 +362,9 @@
   }
 }
 @media (max-width: 1100px) {
+  .headerBrand { gap: 10px; }
+  .headerBrand .wordmark { font-size: 24px; }
+  .companyLogo { width: 72px; }
   .site {
     --header-height: 70px;
   }
