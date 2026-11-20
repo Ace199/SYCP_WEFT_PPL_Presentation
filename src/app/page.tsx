@@ -134,10 +134,6 @@ export default function HomePage() {
                 </figcaption>
               </figure>
             ))}
-            <div className={styles.provenance}>
-              <p>{<T text={home.proof.attribution} />}</p>
-              <p>{<T text={home.proof.note} />}</p>
-            </div>
           </section>
         </main>
         <footer className={styles.footer}>
