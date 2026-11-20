@@ -123,8 +123,8 @@ export const decisions = [
       "Break down animation tasks for more precise assignments",
     ),
     summary: copy(
-      "一个镜头有 3 个主角、7 个配角时，可以把主角、配角和 Camera / Layout 分给不同任务。各任务分别制作和发布，结果汇入同一份镜头状态。",
-      "For a shot with three main and seven supporting characters, assign the main characters, supporting characters and Camera / Layout to separate tasks. Each task is worked on and published separately; their results join the same shot state.",
+      "一个镜头有 3 个主角、7 个配角时，可以把主角和配角分给不同任务。各任务分别制作和发布，结果汇入同一份镜头状态。",
+      "For a shot with three main and seven supporting characters, assign the main and supporting characters to separate tasks. Each task is worked on and published separately; their results join the same shot state.",
     ),
     from: "Single Shot Ani Task",
     to: "Split Tasks + Shared Shot State",
