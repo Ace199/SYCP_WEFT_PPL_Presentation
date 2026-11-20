@@ -1,4 +1,6 @@
 .page {
+  max-width: var(--site-max-width);
+  margin-inline: auto;
   --header-height: 78px;
   --diagram-mint: #009f88;
   --ink: #142030;
@@ -404,12 +406,6 @@
   padding: 4px;
   color: #96e0ca;
   z-index: 1;
-}
-@media (min-width: 1600px) {
-  .page {
-    max-width: 1800px;
-    margin: auto;
-  }
 }
 @media (max-width: 800px) {
   .header {

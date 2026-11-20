@@ -1,4 +1,5 @@
 :root {
+  --site-max-width: 1800px;
   --paper: #f5f5ee;
   --ink: #111411;
   --charcoal: #1c201e;

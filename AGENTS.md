@@ -8,6 +8,8 @@ The repository contains planning, references, and an in-progress frontend implem
 
 ## Confirmed decisions and document authority
 
+User-confirmed on 2026-11-20: CFX and Hair workflows are complete. This supersedes earlier incomplete/evolving wording, including the historical Hair Assembly limitation. Completion is based on the user's confirmation; this website edit does not independently verify production runtime or resolve other implementation questions.
+
 User-confirmed on 2026-09-16: adopt the newer overview-homepage direction, and **V1 delivers only the homepage**. Separate chapters, Flow, and Evidence pages are deferred. The full multi-page V1 checklist in the technical specification does not override this scope.
 
 Additional user decisions: **no backend/CMS integration for V1**; deployment will be on GitHub; the contact email will be provided later. Interpret GitHub hosting as GitHub Pages for planning, pending confirmation of the actual repository/site URL. Do not claim deployment is configured or complete.
@@ -195,7 +197,7 @@ Only make claims supported by project evidence. The planning documents record th
 - Status: active production in one real production project.
 - Coverage: ASSET, SET, SEQ, and SHOT across Maya 2022 and Houdini 21/22.
 - Infrastructure: Rez, USD/Asset Resolver, Ftrack, and Dailies.
-- CFX and Hair paths are still evolving.
+- CFX and Hair workflows are complete (user-confirmed 2026-11-20; not independently runtime-verified in this website task).
 
 Do not invent user counts, publish volumes, time savings, reliability percentages, or claims of complete stability. Preserve attribution: the author is Lead Pipeline TD / System Designer, leading architecture and core implementation. The other contributor extended Production Modules on the shared framework and led ASB core capabilities. Do not imply solo authorship.
 

@@ -43,8 +43,8 @@ const details: Record<DecisionId, { paragraphs: Copy[]; boundary: Copy }> = {
       },
     ],
     boundary: {
-      zh: "Hair 可以出现在资源结构中，但完整 Hair Assembly 仍在演进；这里不将资源可见性当作完整组装的证明。",
-      en: "Hair can appear in the resource structure, while complete Hair assembly is still evolving. Resource visibility does not establish completed assembly.",
+      zh: "CFX 与 Hair 工作流已完成；截图中的资源状态保留原始记录，不代表当前每个资源都已加载或组装完成。",
+      en: "CFX and Hair workflows are complete. Resource states in the screenshot retain their original values and do not indicate that every resource is currently loaded or assembled.",
     },
   },
   state: {

@@ -81,7 +81,7 @@ export const home = {
     ],
     attribution:
       "2026.04–08 核心开发 · 两人团队。作者作为 Lead Pipeline TD / System Designer 主导架构与核心实现；另一位成员扩展 Production Modules，并主导场景组装核心能力。",
-    note: "实际工具界面",
+    note: "实际工具界面；CFX 与 Hair 工作流已完成。",
   },
   footer: { tagline: "SAME PIPELINE\nMORE POSSIBILITIES" },
 };

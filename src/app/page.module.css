@@ -1,6 +1,6 @@
 .site {
   --header-height: 78px;
-  max-width: 1800px;
+  max-width: var(--site-max-width);
   margin: auto;
   background:
     radial-gradient(ellipse at 32% 20%, #ffffff60, transparent 62%),

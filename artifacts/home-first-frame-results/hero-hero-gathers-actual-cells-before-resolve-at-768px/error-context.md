@@ -1,0 +1,335 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: hero.spec.ts >> hero gathers actual cells before resolve at 768px
+- Location: tests\hero.spec.ts:117:7
+
+# Error details
+
+```
+Error: browserContext.close: spawn EPERM
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - link "跳至正文" [ref=e4] [cursor=pointer]:
+        - /url: "#main"
+      - banner [ref=e5]:
+        - link "WEFT / PPL" [ref=e6] [cursor=pointer]:
+          - /url: /
+        - navigation "章节导航" [ref=e7]:
+          - link "00 / 项目概览" [ref=e8] [cursor=pointer]:
+            - /url: /
+          - link "01 / 系统思考" [ref=e9] [cursor=pointer]:
+            - /url: /systematic-thinking/
+          - link "02 / 设计与创新" [ref=e10] [cursor=pointer]:
+            - /url: /design-innovation/
+          - link "03 / 下一步" [ref=e11] [cursor=pointer]:
+            - /url: /next/
+        - generic [ref=e12]:
+          - 'group "生产状态：PRODUCTION SYSTEM，STATUS: ACTIVE，2026" [ref=e13]':
+            - generic [aria-hidden] [ref=e14]:
+              - generic [ref=e15]: PRODUCTION SYSTEM
+              - generic [ref=e16]: "STATUS: ACTIVE"
+              - generic [ref=e17]: "2026"
+          - group "Language / 语言" [ref=e18]:
+            - button "切换为中文" [pressed] [ref=e19] [cursor=pointer]: 中
+            - generic [aria-hidden] [ref=e20]: /
+            - button "Switch to English" [ref=e21] [cursor=pointer]: En
+      - main [ref=e22]:
+        - region "WEFT / PPL" [ref=e23]:
+          - generic:
+            - heading "WEFT / PPL" [level=1]:
+              - generic:
+                - generic: WEFT / PPL
+                - generic [aria-hidden]:
+                  - generic:
+                    - generic: W
+                    - generic: E
+                    - generic: F
+                    - generic: T
+                  - generic: /
+                  - generic:
+                    - generic: P
+                    - generic: P
+                    - generic: L
+            - heading "跨软件协作的动画生产系统" [level=2]:
+              - generic:
+                - generic: 跨软件协作的动画生产系统
+                - generic [aria-hidden]:
+                  - generic:
+                    - generic: 跨
+                    - generic: 软
+                    - generic: 件
+                    - generic: 协
+                    - generic: 作
+                    - generic: 的
+                    - generic: 动
+                    - generic: 画
+                    - generic: 生
+                    - generic: 产
+                    - generic: 系
+                    - generic: 统
+            - paragraph:
+              - generic:
+                - generic: 让不同人、不同软件产出的制作成果，能够正确交接和组合。
+                - generic [aria-hidden]:
+                  - generic:
+                    - generic: 让
+                    - generic: 不
+                    - generic: 同
+                    - generic: 人
+                    - generic: 、
+                    - generic: 不
+                    - generic: 同
+                    - generic: 软
+                    - generic: 件
+                    - generic: 产
+                    - generic: 出
+                    - generic: 的
+                    - generic: 制
+                    - generic: 作
+                    - generic: 成
+                    - generic: 果
+                    - generic: ，
+                    - generic: 能
+                    - generic: 够
+                    - generic: 正
+                    - generic: 确
+                    - generic: 交
+                    - generic: 接
+                    - generic: 和
+                    - generic: 组
+                    - generic: 合
+                    - generic: 。
+          - list [ref=e164]:
+            - listitem [ref=e165]:
+              - generic [ref=e166]: Maya / Houdini
+              - generic [aria-hidden] [ref=e167]:
+                - generic [ref=e168]:
+                  - generic: M
+                  - generic: a
+                  - generic: "y"
+                  - generic: a
+                - generic [ref=e169]: /
+                - generic [ref=e170]:
+                  - generic: H
+                  - generic: o
+                  - generic: u
+                  - generic: d
+                  - generic: i
+                  - generic: "n"
+                  - generic: i
+            - listitem [ref=e171]:
+              - text: ·
+              - generic [ref=e172]: 2-person team
+              - generic [aria-hidden] [ref=e173]:
+                - generic [ref=e174]: "2"
+                - generic [ref=e175]: "-"
+                - generic [ref=e176]:
+                  - generic: p
+                  - generic: e
+                  - generic: r
+                  - generic: s
+                  - generic: o
+                  - generic: "n"
+                - generic [ref=e177]:
+                  - generic: t
+                  - generic: e
+                  - generic: a
+                  - generic: m
+            - listitem [ref=e178]:
+              - generic [ref=e179]: Active Production
+        - region [ref=e183]:
+          - list [ref=e344]:
+            - listitem [ref=e345]: 分散的成果
+            - listitem [ref=e346]: 有序的组织
+            - listitem [ref=e347]: 协同的生产
+          - generic [ref=e348]:
+            - heading "独立变化，也能协同工作。" [level=2] [ref=e349]
+            - paragraph [ref=e350]: WEFT / PPL 将任务、制作成果、版本与依赖组织进共享的 Production Model，连接 Maya 与 Houdini 的工作流程。
+        - region [ref=e351]:
+          - generic [ref=e352]:
+            - generic [ref=e353]:
+              - heading "ONE SYSTEM / THREE VIEWS" [level=2] [ref=e354]
+              - paragraph [ref=e355]: 同一个系统，三个观察角度。
+            - group "检查生产模型节点" [ref=e357]:
+              - generic [ref=e358]:
+                - generic [ref=e359]: PRODUCTION MODULES
+                - generic [ref=e360]:
+                  - button "图示 / 检查 相机 / PRODUCT" [ref=e361] [cursor=pointer]:
+                    - generic [ref=e363]: 相机
+                    - generic [ref=e364]: 独立取景
+                  - button "图示 / 检查 场景 / PRODUCT" [ref=e369] [cursor=pointer]:
+                    - generic [ref=e371]: 场景
+                    - generic [ref=e372]: 空间与环境
+                - button "图示 / 检查 资产 / PRODUCT" [ref=e377] [cursor=pointer]:
+                  - generic [ref=e379]: 资产
+                  - generic [ref=e380]: 独立制作成果
+                  - generic [ref=e381]: v1
+                - button "图示 / 检查 VERSION" [ref=e387] [cursor=pointer]:
+                  - generic [ref=e389]: Module
+              - generic [ref=e390]:
+                - button "图示 / 检查 DEPENDENCY" [ref=e391] [cursor=pointer]
+                - button "图示 / 检查 RESOLUTION" [ref=e397] [cursor=pointer]
+                - button "图示 / 检查 COMPOSITION" [ref=e400] [cursor=pointer]
+              - generic [ref=e402]:
+                - button "图示 / 检查 CONTEXT" [ref=e403] [cursor=pointer]:
+                  - generic [ref=e405]: SHARED MODEL
+                - button "图示 / 检查 PRODUCT" [ref=e406] [cursor=pointer]
+                - generic [ref=e414]:
+                  - generic [aria-hidden]:
+                    - generic [ref=e415] [cursor=pointer]
+                    - generic: 身份
+                  - generic [aria-hidden]:
+                    - generic [ref=e416] [cursor=pointer]
+                    - generic: 版本
+                  - generic [aria-hidden]:
+                    - generic [ref=e417] [cursor=pointer]
+                    - generic: 依赖
+                  - generic [aria-hidden]:
+                    - generic [ref=e418] [cursor=pointer]
+                    - generic: 校验
+                - button "图示 / 检查 STATE" [ref=e419] [cursor=pointer]:
+                  - generic [ref=e422]: 完整的当前状态
+                  - generic [ref=e423]: STATE
+                - generic [ref=e424]:
+                  - generic [aria-hidden]:
+                    - generic [ref=e425] [cursor=pointer]
+                    - generic: 治理
+                  - generic [aria-hidden]:
+                    - generic [ref=e426] [cursor=pointer]
+                    - generic: 恢复
+                  - generic [aria-hidden]:
+                    - generic [ref=e427] [cursor=pointer]
+                    - generic: 可观测性
+                  - generic [aria-hidden]:
+                    - generic [ref=e428] [cursor=pointer]
+                    - generic: 回归验证
+                  - generic [aria-hidden]:
+                    - generic [ref=e429] [cursor=pointer]
+                    - generic: 规模协同
+              - generic [ref=e430]:
+                - button "图示 / 检查 COMPOSITION" [ref=e431] [cursor=pointer]:
+                  - generic [ref=e433]: COMPOSED WORKSPACE
+                - generic [ref=e434]:
+                  - button "图示 / 检查 CONTEXT" [ref=e435] [cursor=pointer]
+                  - generic [ref=e439]:
+                    - button "图示 / 检查 场景 / COMPOSITION" [ref=e440] [cursor=pointer]
+                    - button "图示 / 检查 相机 / COMPOSITION" [ref=e445] [cursor=pointer]
+                  - button "图示 / 检查 资产 / COMPOSITION" [ref=e450] [cursor=pointer]
+                - button "图示 / 检查 COMPOSITION" [ref=e455] [cursor=pointer]:
+                  - generic [ref=e457]: 独立选择，组合为同一个镜头
+              - generic [ref=e458]:
+                - generic [ref=e459]: 独立的制作成果
+                - generic [ref=e460]: 系统组织
+                - generic [ref=e461]: 协同的工作空间
+            - generic "检查生产模型节点" [ref=e462]:
+              - button "检查 CONTEXT" [ref=e463]: CONTEXT
+              - button "检查 PRODUCT" [ref=e464]: PRODUCT
+              - button "检查 VERSION" [ref=e465]: VERSION
+              - button "检查 DEPENDENCY" [ref=e466]: DEPENDENCY
+              - button "检查 STATE" [ref=e467]: STATE
+              - button "检查 VALIDATION" [ref=e468]: VALIDATION
+              - button "检查 RESOLUTION" [ref=e469]: RESOLUTION
+              - button "检查 COMPOSITION" [ref=e470]: COMPOSITION
+            - generic "观察角度" [ref=e471]:
+              - generic [ref=e472]:
+                - button "01 / SYSTEMATIC THINKING 复杂生产，如何成为系统？" [ref=e473] [cursor=pointer]:
+                  - generic [ref=e474]: 01 / SYSTEMATIC THINKING
+                  - strong [ref=e475]: 复杂生产，如何成为系统？
+                - link "EXPLORE SYSTEMATIC THINKING" [ref=e476] [cursor=pointer]:
+                  - /url: /systematic-thinking/
+                  - text: EXPLORE ↗
+              - generic [ref=e477]:
+                - button "02 / DESIGN & INNOVATION 重新审视生产的默认假设。" [ref=e478] [cursor=pointer]:
+                  - generic [ref=e479]: 02 / DESIGN & INNOVATION
+                  - strong [ref=e480]: 重新审视生产的默认假设。
+                - link "EXPLORE DESIGN & INNOVATION" [ref=e481] [cursor=pointer]:
+                  - /url: /design-innovation/
+                  - text: EXPLORE ↗
+              - generic [ref=e482]:
+                - button "03 / WHAT COMES NEXT 让已有系统持续演进。" [ref=e483] [cursor=pointer]:
+                  - generic [ref=e484]: 03 / WHAT COMES NEXT
+                  - strong [ref=e485]: 让已有系统持续演进。
+                - link "EXPLORE WHAT COMES NEXT" [ref=e486] [cursor=pointer]:
+                  - /url: /next/
+                  - text: EXPLORE ↗
+            - generic [ref=e487]:
+              - generic [ref=e488]: SHARED PRODUCTION MODEL
+              - paragraph [ref=e489]: 任务、制作成果、版本与依赖，在同一模型中连接。
+            - generic [ref=e490]:
+              - button "OVERVIEW" [pressed] [ref=e491] [cursor=pointer]: OVERVIEW ↺
+              - generic [ref=e492]: VIEW MODE / OVERVIEW
+              - generic [ref=e493]: 结构示意 · 版本号仅作说明
+          - group [ref=e494]:
+            - generic "查看模型文字说明" [ref=e495] [cursor=pointer]
+        - region [ref=e496]:
+          - generic [ref=e497]:
+            - heading "IN PRODUCTION" [level=2] [ref=e498]
+            - paragraph
+            - generic [ref=e499]:
+              - generic [ref=e500]:
+                - term [ref=e501]:
+                  - generic [ref=e502]: HOSTS
+                - definition [ref=e505]:
+                  - generic [ref=e506]: Maya 2022 / Houdini 21–22
+              - generic [ref=e515]:
+                - term [ref=e516]:
+                  - generic [ref=e517]: SYSTEM
+                - definition [ref=e520]:
+                  - generic [ref=e521]: USD / Rez / Ftrack / Dailies
+              - generic [ref=e530]:
+                - term [ref=e531]:
+                  - generic [ref=e532]: WORKFLOW
+                - definition [ref=e535]:
+                  - generic [ref=e536]: Build / Load / Publish / Review
+              - generic [ref=e545]:
+                - term [ref=e546]:
+                  - generic [ref=e547]: STATUS
+                - definition [ref=e550]:
+                  - generic [ref=e551]: Active production / 2026
+            - link "HOW IT WORKS IN PRODUCTION ↗" [ref=e557] [cursor=pointer]:
+              - /url: /evidence/
+          - figure "选择模块与版本，组装镜头。" [ref=e558]:
+            - heading "FIG. 01 / SHOT BUILDER" [level=3] [ref=e559]
+            - button "放大查看 SHOT BUILDER" [ref=e560]:
+              - img "Shot Builder 实际界面：模块、版本选择与组装状态。" [ref=e561]
+              - generic [ref=e562]: 放大查看 ↗
+          - figure "收集、检查与发布，形成明确的交付流程。" [ref=e564]:
+            - heading "FIG. 02 / PUBLISH / QC" [level=3] [ref=e565]
+            - button "放大查看 PUBLISH / QC" [ref=e566]:
+              - img "Publish 实际界面：收集、检查、发布与集成步骤。" [ref=e567]
+              - generic [ref=e568]: 放大查看 ↗
+          - generic [ref=e570]:
+            - paragraph [ref=e571]: 2026.04–08 核心开发 · 两人团队。作者作为 Lead Pipeline TD / System Designer 主导架构与核心实现；另一位成员扩展 Production Modules，并主导 ASB 核心能力。
+            - paragraph [ref=e572]: 实际工具界面；CFX 与 Hair 路径仍在演进。
+      - contentinfo [ref=e573]:
+        - generic [ref=e574]:
+          - text: WEFT / PPL
+          - paragraph [ref=e575]: SAME PIPELINE MORE POSSIBILITIES
+        - button "人、数据与软件在同一生产系统中连接；重播动画" [ref=e576]:
+          - img "人、数据与软件在同一生产系统中连接" [ref=e577]:
+            - generic [ref=e586]:
+              - generic [ref=e587]: PEOPLE
+              - generic [ref=e588]: DATA
+              - generic [ref=e589]: SOFTWARE
+        - generic [ref=e590]:
+          - link "IN PRODUCTION" [ref=e591] [cursor=pointer]:
+            - /url: /evidence/
+            - text: IN PRODUCTION ↗
+          - link "BACK TO TOP" [ref=e592] [cursor=pointer]:
+            - /url: "#top"
+            - text: BACK TO TOP ↑
+    - button "试编辑" [ref=e594] [cursor=pointer]: 试编辑↗
+  - alert [ref=e595]
+```

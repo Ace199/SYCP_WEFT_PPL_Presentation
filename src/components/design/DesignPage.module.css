@@ -1,4 +1,6 @@
 .page {
+  max-width: var(--site-max-width);
+  margin-inline: auto;
   --ink: #17232c;
   --deck-line: #a8afac;
   --diagram-mint: #009e83;
@@ -682,12 +684,6 @@
 :global(html[lang="en"]) .detailGrid h2 {
   font-family: var(--display);
   letter-spacing: 0;
-}
-@media (min-width: 1700px) {
-  .page {
-    max-width: 1700px;
-    margin: auto;
-  }
 }
 @media (max-width: 1050px) {
   .cardMain {
